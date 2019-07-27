@@ -1,0 +1,630 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\begin{document}
+\break
+\section{Question}
+Show that $f(x,y)$ = $xy^2$ \\
+(i) satisfies a Lipschitz condition on any rectangle $a\le x \le b$, $c\le y \le d $\\
+(ii) does not satisfy a Lipschitz condition on any strip $a \le x \le b$, $-\infty$ $\le$ $y \le$ $\infty$ 
+\subsection{Solution}
+By Lipschitz condition given as\\
+$\arrowvert f(x, y_1) - f(x, y_2) \arrowvert \le L \arrowvert y_1 - y_2 \arrowvert \ldots (1)$ such that $L \ge 0$, then its satisfies the Lipschitz condtion.\\
+since $$f(x,y) = xy^2$$
+hence; $$f(x,y_1) = xy^2_1$$
+$$f(x,y_2) = xy^2_2 $$
+Thus,
+$$ \arrowvert f(x,y_1) - f(x,y_2) \arrowvert = \arrowvert xy^2_1 - xy^2_2 \arrowvert $$
+$\rightarrow$ $$\arrowvert xy^2_1 - xy^2_2 \arrowvert$$
+$$ \arrowvert x \arrowvert \arrowvert y^2_1 - y^2_2 \arrowvert \ldots \ldots (*)$$
+$\rightarrow$ 
+\begin{eqnarray}
+\nonumber \arrowvert y^2_1 - y^2_2 \arrowvert =& \arrowvert (y_1 + y_2)(y_1-y_2) \arrowvert \\
+\nonumber  =& \arrowvert y_1 + y_2\arrowvert \arrowvert y_1-y_2  \arrowvert \ldots \ldots (**)
+\end{eqnarray}
+Put $**$ into $*$ we have
+\begin{eqnarray}
+\nonumber \arrowvert x \arrowvert \arrowvert y_1 +y_2 \arrowvert \arrowvert y_1 - y_2 \arrowvert \ldots \ldots (3*)
+\end{eqnarray} at $x = a $ and $y_1=y_2=c$
+\begin{eqnarray}
+\nonumber \arrowvert a \arrowvert c+c \arrowvert \arrowvert y_1 - y_2 \arrowvert \\
+\nonumber \arrowvert a \arrowvert \arrowvert 2c \arrowvert \arrowvert y_1 - y_2 \arrowvert
+\end{eqnarray} But $\arrowvert a \arrowvert \arrowvert 2c \arrowvert \ge 0 $ whenever $a \neq 0$ and $c \neq 0 $.\\ Similarly at $x=b$ and $y_1=y_2=d$
+\begin{eqnarray}
+\nonumber \arrowvert b \arrowvert \arrowvert 2d \arrowvert \arrowvert y_1 - y_2 \arrowvert
+\end{eqnarray} where $\arrowvert b \arrowvert \arrowvert 2d \arrowvert \ge 0 $ whenever $b \neq 0 $ and $d \neq 0$ from 1 above\\
+\begin{eqnarray}
+\nonumber \arrowvert f(x,y_1) \arrowvert - \arrowvert f(x,y_2) \arrowvert \le L \arrowvert y_1 - y_2 ]\arrowvert \\
+\nonumber \arrowvert x \arrowvert \arrowvert y_1 + y_2 \arrowvert \arrowvert y_1 - y_2 \arrowvert \le \arrowvert a \arrowvert \arrowvert 2c \arrowvert \arrowvert y_1 - y_2 \arrowvert \\
+\nonumber \text{and}\quad \arrowvert a \arrowvert \arrowvert 2c \arrowvert = L \ge 0 \\
+\nonumber \rightarrow \arrowvert x \arrowvert \arrowvert y_1 + y_2 \arrowvert \arrowvert y_1 - y_2 \arrowvert \le \arrowvert a \arrowvert \arrowvert 2c \arrowvert \arrowvert y_1 - y_2 \arrowvert\\
+\nonumber \le L \arrowvert y_1 - y_2 \arrowvert
+\end{eqnarray} which shows that it satisfies Lipschitz condition and the solution is Unique\\~\\
+\textbf{Solution(1.2)} \begin{eqnarray}
+\nonumber \arrowvert f(x,y_1) - f(x,y_2) \arrowvert \le & L & \arrowvert y_1 - y_2 \arrowvert \\
+\nonumber \frac{\arrowvert f(x,y_1) - f(x,y_2)\arrowvert} {\arrowvert y_1 - y_2 \arrowvert} \le & L \\
+\nonumber \frac{\arrowvert xy^2_1 - xy^2_2  \arrowvert} {\arrowvert y_1 - y_2 \arrowvert} \le & L \\
+\nonumber \arrowvert x \arrowvert \frac{\arrowvert y^2_1 - y^2_2  \arrowvert} {\arrowvert y_1 - y_2 \arrowvert} \le & L\\
+\nonumber \arrowvert x \arrowvert \frac{\arrowvert (y_1 +y_2) (y_1 - y_2)  \arrowvert} {\arrowvert y_1 - y_2 \arrowvert} \le & L\\
+\nonumber \arrowvert x \arrowvert \frac{\arrowvert (y_1 +y_2) (y_1 - y_2)  \arrowvert} {\arrowvert y_1 - y_2 \arrowvert} \le & L\\
+\nonumber \arrowvert x \arrowvert \arrowvert y_1 + y_2 \arrowvert \le & L\\
+\nonumber \text{Let} \quad  y_1 = & \infty \\
+\nonumber \arrowvert x \arrowvert \times & \infty\\
+\nonumber \text{Since} \quad y \rightarrow \infty, L \rightarrow \infty.  
+\end{eqnarray} thus it therefore implies that Lipschitz condtion doesn't hold. 
+\section{Solution}
+If $ f(x,y) = y ^\frac{2}{3} $, show that Lipschitz condition is not satisfied in any region containing the origin and the solution of the differential equation $ \frac{dy}{dx} = f(x,y) $ satisfying the conditions $y=0$, when $x=0$ is not unique
+\subsection{Solution}
+$$ f(x,y) = y^\frac{2}{3} $$\\
+By Lipschitz condition 
+\begin{eqnarray}
+\nonumber \arrowvert f(x, y_1) - f(x, y_2) \arrowvert \le \arrowvert \frac{\partial f}{\partial y} \arrowvert  \arrowvert y_1 - y_2 \arrowvert \\
+\nonumber \text{whenever}\quad  \arrowvert \frac{\partial f}{\partial y} \arrowvert \le L \\
+Thus, 
+\nonumber \arrowvert f(x, y_1) - f(x, y_2) \arrowvert \le \arrowvert y_1 - y_2 \arrowvert  \\
+\nonumber \text{since} \quad (x,y) = y^\frac{2}{3}\\
+\nonumber \frac{\partial f}{\partial y} = \frac{2}{3}y^\frac{-1}{3} \implies \frac{2}{3} \times \frac{1}{3\sqrt{y}}\\
+\nonumber \arrowvert \frac{\partial f}{\partial y} \arrowvert = \arrowvert \frac{2}{3\times 3\sqrt{y}} \arrowvert\\
+\nonumber \text{hence} \quad
+\nonumber \arrowvert y^\frac{2}{3}_1 - y^\frac{2}{3}_2 \arrowvert \le \arrowvert \frac{2}{3\times 3\sqrt{y}} \arrowvert \arrowvert y_1 - y_2 \arrowvert\\
+\nonumber \arrowvert (y^\frac{1}{3}_1)^2 - (y^\frac{1}{3}_2)^2 \arrowvert \le \arrowvert \frac{2}{3\times 3\sqrt{y}} \arrowvert \arrowvert y_1 - y_2 \arrowvert \\
+\nonumber \arrowvert (y^\frac{1}{3}_1 + y^\frac{1}{3}_2)\arrowvert \arrowvert y^\frac{1}{3}_1 - y^\frac{1}{3}_2 \arrowvert \le \arrowvert \frac{2}{3\times 3\sqrt{y}} \arrowvert \arrowvert y_1 - y_2 \arrowvert\\
+\nonumber \text{But} \quad
+\nonumber \arrowvert \frac{\partial f(x,y)}{\partial y} \arrowvert = \arrowvert \frac{2}{3\times 3\sqrt{y}} \arrowvert \rightarrow \infty \quad \text{when} \quad y \rightarrow \infty .\quad 
+\end{eqnarray} It shows that $L$ $\rightarrow $ $\infty$ and thus,\\
+the Lipschitz condition is not satisfied by $f(x,y) = y^\frac{2}{3}$.
+\begin{eqnarray}
+\nonumber \text{Hence}\quad \frac{dy}{dx} = y^\frac{2}{3}\\
+\nonumber y^\frac{-2}{3} dy = dx \\
+\nonumber \text{integrate both sides} \\
+\nonumber \int y^\frac{-2}{3} dy = \int dx \\
+\nonumber \frac{y^\frac{-2}{3}+1}{\frac{-2}{3}+1}  = x + c \\
+\nonumber \frac{y^\frac{1}{3}}{\frac{1}{3}} = x + c \\
+\nonumber 3y^\frac{1}{3} = x + c \\
+\nonumber \implies c = 0 
+\end{eqnarray}
+\section{Solution}
+By Lipschitz condition\\
+\begin{align*}
+\arrowvert f(x,y_1) \arrowvert - f(x,y_2) \arrowvert \le L \arrowvert y_1 - y_2 \arrowvert\\
+\text{But} \quad f(x,y) = \frac{y-1}{x} \\
+\text{Thus} \quad f(x,y_1) = \frac{y_1 -1}{x} \\
+f(x,y_2) = \frac{y_2 - 1}{x} \\
+\text{hence}; \quad
+\arrowvert f(x,y_1) - f(x,y_2) \arrowvert = \left| \frac{y_1 -1}{x} - \left( \frac{y_2 -1}{x}\right) \right| \\
+\rightarrow \arrowvert f(x, y_1) - f(x, y_2) \arrowvert = \left|\frac{1}{x} \left(y_1 -1-(y_2-1)\right) \right| \\
+= \arrowvert \frac{1}{x} \arrowvert \left| y_1 - y_2 \right|\\
+\text{at} \quad y(0) = 1 \\
+\arrowvert \frac{1}{x} \arrowvert \arrowvert y_1 - y_2 \arrowvert \rightarrow \infty
+\end{align*}
+Since $x=0$ is a point of the rectangle $\mathbb{R}$ of $(x,y)$ plane with open interval $(0,1)$ as its centre. It shows that the Lipschitz condition is not satisfied by the function $ f(x,y) = \frac{y-1}{x}$ on the rectangle $\mathbb{R}$.
+\begin{align*}
+\text{Now;} \quad \\
+\frac{dy}{dx} = \frac{y-1}{x}\\
+\frac{1}{y-1} dy = \frac{1}{x} dx \\
+\text{Integrate both sides} \quad \\
+\int \frac{1}{y-1} dy = \int \frac{1}{x} dx \\
+\log (y-1) = \log x + c \\
+\log (y-1) = \log x + \log y \\
+\log (y-1) = \log (xk) \\
+\text{take exponential of both sides} \quad \\
+\exp ^{In(y-1)} = \exp ^{In(xk)} \\ 
+y-1 = xk \qquad \text{at} \quad y(0) = 1
+\end{align*}
+where $k$ is indeterminate. \\
+Since $k$ is indeterminate for the initial condition $y(0) = 1 $. It shows that the solution of the IVP exists but not complete.
+\section{Question}
+First we need to show \\
+\begin{align*}
+\varPhi (t) =
+\begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & e^{2t}
+\end{pmatrix} 
+\text{is a fundamental matrix of differential system} \quad x^\prime = Ax \ldots (1)  \\
+\text{where A =} 
+\begin{pmatrix}
+2 & 1\\
+0 & 2
+\end{pmatrix} \text{thus}
+\end{align*}
+\begin{eqnarray}
+\nonumber \arrowvert A - \lambda E \arrowvert = 
+\left|
+\begin{pmatrix} 
+2-\lambda & 1 \\
+0 & 2- \lambda
+\end{pmatrix} \right| = 0 \\
+\nonumber \implies \lambda ^2 - 4 \lambda + 4 = 0 \\
+\nonumber \implies \lambda = 2 \text{(twice)}
+\end{eqnarray}
+Since the linear system (1) has a repeated eigenvalues 2, hence two linearly independent solutions are:\\
+\begin{align*}
+x_{1}^\prime = h^\prime e^{2t} \quad \text{and}\\
+x_{2} = h^\prime te^{2t} + h^2e^{2t} \ldots \ldots (2)\\
+\text{where} \quad h^\prime = \begin{pmatrix}
+h_1^\prime \\~\\
+h_2^\prime
+\end{pmatrix} and \quad h^2 = \begin{pmatrix}
+h_1^2\\~\\
+h_2^2
+\end{pmatrix}
+\end{align*}
+are known eigenvectors corresponding to the repeated eigenvalue $ \lambda $.
+Since $ x_2 = h^\prime te^{2t} + h^2e^{2t} $ is a solution of $ x^\prime = Ax, $ it implies that $ x_2^\prime = Ax_2$. and hence by differentiating (2) and substituting into (3) we have \\
+$$ h^\prime e^{2t} + 2h^\prime te^{2t} + 2h^2e^{2t} = A (h^\prime te^{2t} + h^2e^{2t}) $$
+$$ (h^\prime + 2h^2)e^{2t} + 2h^\prime te^{2t} = Ah^\prime te^{2t} + Ah^2e^{2t} $$ and equating the co-efficients \\
+$$ 2h^\prime = Ah^\prime \implies (A-2E)h^\prime = 0 $$
+$$ h^\prime + 2h^2 = Ah^2 \implies (A-2E)= h^\prime$$
+considering the case\\
+$$ (A-2E)h^\prime = 0 $$
+\begin{align*}
+\begin{pmatrix}
+0 & 1 \\
+0 & 0
+\end{pmatrix} \begin{pmatrix}
+h_1^\prime \\
+h_2^\prime
+\end{pmatrix} = 0 
+\end{align*}
+$$ \implies 0h_1^\prime + h_2^\prime = 0 $$
+$$ \implies  h_2^\prime = 0h_1^\prime $$
+so 
+\begin{align*}
+h^\prime =
+\begin{pmatrix}
+h_1^\prime\\
+0h_1^\prime
+\end{pmatrix}
+\end{align*}
+let $ h_1^\prime = 1 $, we have 
+\begin{align*}
+h^\prime =
+\begin{pmatrix}
+1\\
+0
+\end{pmatrix}
+\end{align*}
+considering the second case
+$ (A-2E)h^2 = h^\prime $
+\begin{align*}
+\begin{pmatrix}
+0 & 1\\
+0 & 0
+\end{pmatrix}
+\begin{pmatrix}
+h_1^2 \\
+h_2^2
+\end{pmatrix} = 
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix}
+\end{align*}
+$$ 0h_1^2 + h_2^2  = 1 $$
+$$ \implies h_2^2 = 1 + 0h_1^2 $$
+let $h_1^2 = 0, $ we have
+\begin{align*}
+h^2 =
+\begin{pmatrix}
+0 \\
+1 
+\end{pmatrix}
+\end{align*}
+Since the two linearly independent solutions are given as 
+$$ x_1 = h^\prime e^{2t} $$
+$$ x_2 = h^\prime te^{2t} + h^2 e^{2t} $$
+i.e 
+\begin{align*}
+x_1 =
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix} e^{2t} = 
+\begin{pmatrix}
+e^{2t}\\
+0
+\end{pmatrix} and
+\end{align*}
+\begin{align*}
+x_2 =
+\begin{pmatrix}
+1 \\
+0
+\end{pmatrix} te^{2t} = 
+\begin{pmatrix}
+0\\
+1
+\end{pmatrix} e^{2t}
+\end{align*} 
+\begin{align*}
+=
+\begin{pmatrix}
+te^{2t} \\
+0
+\end{pmatrix} + 
+\begin{pmatrix}
+0\\
+e^{2t}
+\end{pmatrix} 
+\end{align*}
+\begin{align*}
+=
+\begin{pmatrix}
+te^{2t} \\
+e^{2t}
+\end{pmatrix} 
+\end{align*}
+Hence the fundamental matrix is given as 
+\begin{align*}
+\varPhi (t) =
+\begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & e^{2t}
+\end{pmatrix}
+\end{align*}
+and it can be seen that $ \left| \varPhi (t) \right| = e^{4t} \neq 0 $; $\forall$ $t \epsilon I$. Hence,
+\begin{align*}
+\varPhi (t) =
+\begin{pmatrix}
+e^{2t} & te^{2t}\\
+0 & e^{2t}
+\end{pmatrix}
+\end{align*} is the fundamental matrix of the homogenous system $ x^\prime = Ax $. \\
+but if
+\begin{align*}
+t=0 \quad \phi (0) =
+\begin{pmatrix}
+1 & t\\
+0 & 1
+\end{pmatrix}
+\end{align*}
+\subsection{Non-homogenous solution}
+Now, since \begin{align*}
+\varPhi (t) =
+\begin{pmatrix}
+e^{2t} & te^{2t}\\
+0 & e^{2t}
+\end{pmatrix}
+\end{align*}
+\begin{align*}
+\varPhi^{-1} (t) = \frac{1}{e^{4t}}
+\begin{pmatrix}
+e^{2t} & -te^{2t}\\
+0 & e^{2t}
+\end{pmatrix}
+\end{align*}
+\begin{align*}
+=
+\begin{pmatrix}
+e^{-2t} & -te^{-2t} \\
+0 & e^{-2t}
+\end{pmatrix}
+\end{align*}
+\begin{align*}
+\varPhi^{-1} (t) = \varPhi^{-1}(0) =
+\begin{pmatrix}
+1 & 0\\
+0 & 1
+\end{pmatrix} \text{at} \quad t = 0
+\end{align*}
+The general solution of the non-homogenous system is given as  $$ x(t) = \varPhi (t) \left[\varPhi^{-1}(t_0)x^0 + \int_{t_o}^{t}\varPhi^{-1}(\tau)f(\tau)d\tau\right]$$
+\begin{align*}
+= 
+\begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & e^{2t}
+\end{pmatrix}
+\left[
+\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}
+\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix} + \int_{0}^{t}
+\begin{pmatrix}
+e^{-2\tau} & -\tau e^{-2\tau} \\
+0 & e^{-2\tau}
+\end{pmatrix} 
+\begin{pmatrix}
+0 \tau \\
+e^{2t} 
+\end{pmatrix} d \tau
+\right]
+\end{align*}
+\begin{align*}
+= 
+\begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & e^{2t}
+\end{pmatrix}
+\left[
+\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix} + \int_{0}^{t}
+\begin{pmatrix}
+-t \\
+1 
+\end{pmatrix}  d \tau
+\right]
+\end{align*}
+\begin{align*}
+=
+\begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & -e^{2t} 
+\end{pmatrix} + 
+\int_{0}^{t} 
+\begin{pmatrix}
+- \tau \\
+1 
+\end{pmatrix} dt \times
+\begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & e^{2t}
+\end{pmatrix}
+\end{align*}
+\begin{align*}
+=
+\begin{pmatrix}
+e^{2t} & -te^{2t} \\
+0 & -e^{2t} 
+\end{pmatrix} + 
+\left[\int_{0}^{t} - \tau \int_{0}^{t} dt\right] \begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & e^{2t}
+\end{pmatrix}
+\end{align*}
+\begin{align*}
+=
+\begin{pmatrix}
+e^{2t} & -te^{2t} \\
+0 & -e^{2t}
+\end{pmatrix} +  
+\begin{pmatrix}
+\frac{-t^2}{2} \\
+t
+\end{pmatrix}
+\begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & e^{2t}
+\end{pmatrix}
+\end{align*}
+\begin{align*}
+=
+\begin{pmatrix}
+e^{2t} - te^{2t} \\
+-e^{2t}
+\end{pmatrix} +
+\begin{pmatrix}
+e^{2t} & te^{2t} \\
+0 & e^{2t} 
+\end{pmatrix}
+\begin{pmatrix}
+\frac{-t^2}{2}\\
+t
+\end{pmatrix}
+\end{align*}
+\begin{align*}
+= 
+\begin{pmatrix}
+e^{2t} & -te^{2t} \\
+-e^{2t}
+\end{pmatrix} + 
+\begin{pmatrix}
+\frac{-t^2e^{2t}}{2} & + t^2e^{2t} \\
+0 & + te^{2t}
+\end{pmatrix}
+\end{align*}
+\begin{align*}
+=
+\begin{pmatrix}
+e^{2t} -te^{2t} -t^2e^{2t} + t^2e^{2t} \\
+-e^{2t} + te^{2t}
+\end{pmatrix}
+\end{align*}
+\section{Solution}
+Consider the following systems \\
+\begin{align*}
+x^\prime &= -2x + y + 2 \ldots (i)\\
+y^\prime &= -2y + 8  \ldots (ii) \\
+\text{Let} \quad (i) \quad \text{and} \quad (ii) \quad \text{be} \quad  *
+\end{align*}
+from equation $(*)$
+\begin{align*}
+\begin{pmatrix}
+x^\prime \\
+y^\prime 
+\end{pmatrix} = 
+\begin{pmatrix}
+-2 & 1 \\
+0 & -2
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y
+\end{pmatrix} + 
+\begin{pmatrix}
+2 \\
+8
+\end{pmatrix}
+\end{align*}
+Note  
+\begin{align*}
+A = 
+\begin{pmatrix}
+-2 & 1 \\
+0 & -2
+\end{pmatrix} \quad b = 
+\begin{pmatrix}
+b_1 \\
+b_2 
+\end{pmatrix} = 
+\begin{pmatrix}
+2 \\
+8
+\end{pmatrix}
+\end{align*}
+the critical point can be generated by equating the derivative of $x$ and $y$ to zero, \\
+\begin{align*}
+x^\prime =& -2x + y + 2 = 0 \ldots (i) \\
+y^\prime =& -2y + 8 = 0 \ldots (ii)\\
+\text{solving simultaneously} \quad
+y = 4, \quad x=3
+\end{align*}
+thus critical points is $(3, 4)$. Since $\arrowvert A \arrowvert$ $ = 4 \ge 0 $ and $a_{11} +a_{22} = tr(A) = -2+(-2) = -4. $ \\
+then we conclude that the $(x^*, y^*)$ is globally asymptotically stable. \\~\\
+Now, equivalently;
+\begin{align*}
+\left|
+\begin{pmatrix}
+-2 & 1 \\
+0 & -2
+\end{pmatrix} -
+\begin{pmatrix}
+\lambda & 0 \\
+0 & \lambda
+\end{pmatrix}
+\right| = 0 
+\end{align*}
+\begin{align*}
+\left|
+\begin{pmatrix}
+(-2-\lambda) & 1 \\
+0 & (-2-\lambda)
+\end{pmatrix}
+\right| = 0 
+\end{align*}
+$$ (-2-\lambda) ^2 = 0 $$
+$$ -2-\lambda = 0 $$
+$$ \lambda = -2 \quad \text{twice} $$. 
+Since $ \lambda _{1} = \lambda _{2} = -2 $ which is a negative eigen value, then, the critical point $(x^*, y^*) = (3, 4) $ is globally asymptotically stable and it is a sink or a spiral. \\~\\
+\textbf{Sketch of the system}
+%\begin{center}
+	%\centering
+	%\includegraphics[width=0.5\linewidth]{../Desktop/des}
+	%\label{fig:des}
+%\end{center}
+\subsection{Solution 5b(i)}
+\begin{align*}
+x^\prime &= y (x^2 +1) = yx^2 + y \ldots (i) \\
+y^\prime &= x - 2xy^2 \ldots (ii)
+\end{align*}
+by equations (i) and (ii) to zero \\
+$$ yx^2 + y = 0 \implies y = 0 , x = i $$
+$$ x - 2xy^2 = 0 \implies y = \sqrt{\frac{1}{2}}, x = 0 $$
+the critical points are; \\
+$$ \left(i, \sqrt{\frac{1}{2}}\right)\text {and}\quad  (0, 0)$$
+\subsection{b(ii)}
+\begin{align*}
+J(A) =
+\begin{pmatrix}
+f_x(x,y) & f_y(x,y) \\~\\
+g_x(x,y) & g_y(x,y)
+\end{pmatrix} 
+\end{align*}
+$$f(x,y) = yx^2 + y $$
+$$g(x,y) = x - 2xy^2 $$ 
+$$f_x(x,y) = 2xy , g_x(x,y) = 1-2y^2 $$ 
+$$f_y(x,y) = x^2 +1 , g_x(x,y) = -4xy $$
+\begin{align*}
+J(A) =
+\begin{pmatrix}
+2xy & x^2+1 \\
+1-2y^2 & -4xy
+\end{pmatrix}
+\end{align*}
+Since $f,g$ are functions in $\mathbb{R}^2$, we pick the critical point $(0,0)$ which is the real component of $(x,y)$.
+\begin{align*}
+J(0,0) =
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}
+\end{align*}
+since $tr(J(0,0))$ $\nleq$ 0 and Det$(J(0,0)) = -1 \ngeq 0$, we conclude that the critical point is globally asymptotically stable. \\
+Since
+\begin{align*}
+J(0,0) =
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix} = A
+\end{align*}
+But $\left| A - \lambda E \right| = 0 $
+\begin{align*}
+\left|
+\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix} - 
+\begin{pmatrix}
+\lambda & 0 \\
+0 & \lambda
+\end{pmatrix} \right| = 0 
+\end{align*}
+\begin{align*}
+\left|
+\begin{pmatrix}
+- \lambda & 1 \\
+1 & - \lambda
+\end{pmatrix} \right | = 0 
+\end{align*}
+$$ \lambda ^2 - 1 = 0 $$
+$$ \lambda ^2 = 1 $$
+$$ \lambda = 1 \quad \text{twice} $$
+Hence, the critical point $(0,0)$ is a Node or a Source, since the Eigenvalues are positive.
+\section{Solution}
+The critical points are $(0,0)$ and $(\frac{m}{\beta}, \frac{\ell}{\alpha})$\\
+The eigenvalues are \\
+$$\left| A - \lambda E \right| = 0 $$ 
+\begin{align*}
+\left|
+\begin{pmatrix}
+\ell - \alpha x_2 - \lambda & 0 \\
+0 & -m+\beta x_1 - \lambda 
+\end{pmatrix} \right| = 0 
+\end{align*}
+$$ \lambda = \ell - \alpha x_{2}, \lambda = \beta x_{1} - m $$ 
+let $\ell=1, \alpha = 1, m = 1, \beta = 1 $. Since they are positive constants.
+$ \lambda = 1 - x_{2}, \lambda = x_{1} - 1 $. Since $ x_{1} \ge 0 , x_{2} \ge 0 $.\\~\\
+Therefore, the eigenvalues are real with opposite signs. The critical point $(0,0)$ is a saddle point and unstable.\\~\\
+$$ x(t) = Ae^{(\ell - \alpha x_2)t} + Be^{(\beta x_1 - m)t} $$
+$$ y(t) = \frac{1}{-\alpha x_1} \left( -\alpha x_2 Ae^{(\ell - \alpha x_2)t} + \beta x_{1}(1+\ell - \alpha x_{2}t)-m - \ell \right) Be^{(\beta x_1 - m)t}$$
+if $ \ell \ge \alpha x_{2} \quad \text{and} \quad \beta x_1 \ge m $ as $t \rightarrow \infty , \quad x(t) \rightarrow \infty, \quad y(t) \rightarrow \infty $\\
+Alternatively, \\
+Evaluating the Jacobian matrix 
+\begin{align*}
+J(x_1, x_2) =
+\begin{pmatrix}
+\ell - \alpha x_2 & - \alpha x_{1} \\
+\beta x_{2} & -m + \beta x_1
+\end{pmatrix}
+\end{align*}
+at the critical point $(0,0)$ 
+\begin{align*}
+J(0,0) =
+\begin{pmatrix}
+\ell & 0 \\
+0 & -m
+\end{pmatrix}
+\end{align*}
+$ \lambda = \ell $ and $\lambda = -m $. Since $\ell$ and m are positive constants. Therefore, the eigenvalues are real with opposite signs. The critical point $(0,0)$ is a saddle point and it is unstable.\\~\\
+at the critical point $(\frac{m}{\beta}, \frac{\ell}{\alpha}) $
+\begin{align*}
+J(\frac{m}{\beta}, \frac{\ell}{\alpha}) =
+\begin{pmatrix}
+0 & \frac{-\alpha m}{\beta}\\
+\frac{\ell \alpha}{\beta} & 0 
+\end{pmatrix}
+\end{align*}
+$\lambda = \pm i \sqrt{\ell m} $ \\
+The critical point $(\frac{m}{\beta}, \frac{\ell}{\alpha}) $ is a centre. It is stable but not asymptotically stable.\\~\\
+What further conditions on $\ell$ and m will ensure that the critical point is asymptotically stable ? \\~\\
+If $\ell \le \alpha x_{2} $ and $\beta x_{1} \le$ m in equation (1), as $t \rightarrow \infty, \quad x(t) \rightarrow 0, \quad y(t) \rightarrow 0 $. Thus, $(0,0)$ is asymptotically stable.
+\end{document}
